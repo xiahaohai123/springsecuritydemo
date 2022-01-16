@@ -1,0 +1,77 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            f8:65:80:03:49:84:59:f0
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=CN, ST=GuangDong, L=ShenZhen, O=Huawei Software Technologies Co., Ltd, OU=Cloud, CN=ca66.pki.iam
+        Validity
+            Not Before: Jun 17 02:16:46 2019 GMT
+            Not After : Jun 14 02:16:46 2029 GMT
+        Subject: C=CN, ST=GuangDong, L=ShenZhen, O=Huawei Software Technologies Co., Ltd, OU=Cloud, CN=signing66.pki.iam
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:c7:44:8e:75:4c:e6:72:10:ef:9e:b3:47:30:60:
+                    90:32:dc:f1:f6:1e:6d:32:8c:01:74:5f:b7:b8:0c:
+                    05:b5:b1:fc:38:28:cf:f5:2a:70:22:e1:8d:11:99:
+                    bf:19:2b:91:2d:4d:0a:1b:fe:21:56:a2:cd:a3:64:
+                    3f:de:dd:22:4d:cc:07:9d:73:fd:0c:a4:29:d8:4f:
+                    6d:fa:8e:2c:d6:9f:5d:7c:86:be:60:48:78:b3:7c:
+                    d6:61:6c:d9:43:27:29:07:30:b6:59:0f:6d:65:1e:
+                    67:19:77:e8:e1:1f:61:33:98:92:a1:ec:ea:3b:ae:
+                    19:33:b1:91:6e:9d:81:14:92:b2:34:df:65:86:42:
+                    68:19:c8:b6:72:3d:45:6d:9e:51:43:50:7e:42:62:
+                    9b:e6:fb:42:7f:15:7b:8b:8d:30:7c:bf:88:d1:46:
+                    32:73:2c:79:a0:57:77:39:7d:82:4a:ae:99:44:10:
+                    0f:81:95:19:a4:e2:df:fc:99:3b:23:71:a9:59:f9:
+                    90:ec:d4:d2:e8:f7:c9:da:31:41:fd:4b:70:ce:10:
+                    92:5f:31:59:94:c8:3a:f7:33:c0:f0:ec:26:cc:c9:
+                    18:2c:68:8a:95:33:a2:1f:c4:41:a9:46:c9:99:bf:
+                    0c:12:17:6b:4e:7e:c7:a5:b3:f7:1c:fa:57:2f:54:
+                    89:87
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Key Usage: 
+                Digital Signature, Non Repudiation, Key Encipherment
+    Signature Algorithm: sha256WithRSAEncryption
+         1d:a4:ef:dc:c3:5e:1b:4e:88:0c:90:aa:80:70:fa:e0:8c:e0:
+         01:e6:90:38:d1:ad:44:4c:53:33:15:02:79:48:02:fb:d4:d7:
+         25:9c:2d:e4:7b:fc:2d:48:98:4d:13:2b:56:5d:da:40:7a:9a:
+         e5:ff:e0:74:56:ac:c7:7d:e4:a1:30:61:32:90:b3:fb:62:33:
+         f6:e0:bb:1e:10:d8:e9:31:51:55:51:0c:65:f4:59:72:a0:d2:
+         1b:0d:d7:f2:42:8b:6b:5c:e7:b8:24:25:e7:2d:56:bc:c5:02:
+         ae:78:93:38:0c:c6:f9:5e:90:18:62:5b:ab:75:64:cd:50:35:
+         eb:4c:97:77:99:a9:04:3a:23:5e:08:8d:36:c9:fd:8b:6e:79:
+         eb:72:78:83:c6:a6:2d:7e:7c:20:fc:bb:3a:42:fb:aa:e8:38:
+         5c:11:29:2a:17:ed:1b:28:b1:60:f0:8a:10:f0:03:17:6c:8c:
+         de:0f:68:6e:e7:24:de:82:b9:fd:f6:9d:c0:38:7b:e9:14:34:
+         98:3b:ce:5f:67:c8:be:11:2f:cb:a7:1c:d6:fe:82:68:ec:c6:
+         1d:3b:73:c9:37:e1:03:ed:be:6b:d6:e8:26:9f:8f:92:a7:a5:
+         cc:9c:c6:51:6a:91:63:1b:14:b2:8b:3a:24:90:0e:2c:1b:50:
+         44:12:d2:5d
+-----BEGIN CERTIFICATE-----
+MIIDujCCAqKgAwIBAgIJAPhlgANJhFnwMA0GCSqGSIb3DQEBCwUAMIGLMQswCQYD
+VQQGEwJDTjESMBAGA1UECAwJR3VhbmdEb25nMREwDwYDVQQHDAhTaGVuWmhlbjEu
+MCwGA1UECgwlSHVhd2VpIFNvZnR3YXJlIFRlY2hub2xvZ2llcyBDby4sIEx0ZDEO
+MAwGA1UECwwFQ2xvdWQxFTATBgNVBAMMDGNhNjYucGtpLmlhbTAeFw0xOTA2MTcw
+MjE2NDZaFw0yOTA2MTQwMjE2NDZaMIGQMQswCQYDVQQGEwJDTjESMBAGA1UECAwJ
+R3VhbmdEb25nMREwDwYDVQQHDAhTaGVuWmhlbjEuMCwGA1UECgwlSHVhd2VpIFNv
+ZnR3YXJlIFRlY2hub2xvZ2llcyBDby4sIEx0ZDEOMAwGA1UECwwFQ2xvdWQxGjAY
+BgNVBAMMEXNpZ25pbmc2Ni5wa2kuaWFtMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+MIIBCgKCAQEAx0SOdUzmchDvnrNHMGCQMtzx9h5tMowBdF+3uAwFtbH8OCjP9Spw
+IuGNEZm/GSuRLU0KG/4hVqLNo2Q/3t0iTcwHnXP9DKQp2E9t+o4s1p9dfIa+YEh4
+s3zWYWzZQycpBzC2WQ9tZR5nGXfo4R9hM5iSoezqO64ZM7GRbp2BFJKyNN9lhkJo
+Gci2cj1FbZ5RQ1B+QmKb5vtCfxV7i40wfL+I0UYycyx5oFd3OX2CSq6ZRBAPgZUZ
+pOLf/Jk7I3GpWfmQ7NTS6PfJ2jFB/UtwzhCSXzFZlMg69zPA8OwmzMkYLGiKlTOi
+H8RBqUbJmb8MEhdrTn7HpbP3HPpXL1SJhwIDAQABoxowGDAJBgNVHRMEAjAAMAsG
+A1UdDwQEAwIF4DANBgkqhkiG9w0BAQsFAAOCAQEAHaTv3MNeG06IDJCqgHD64Izg
+AeaQONGtRExTMxUCeUgC+9TXJZwt5Hv8LUiYTRMrVl3aQHqa5f/gdFasx33koTBh
+MpCz+2Iz9uC7HhDY6TFRVVEMZfRZcqDSGw3X8kKLa1znuCQl5y1WvMUCrniTOAzG
++V6QGGJbq3VkzVA160yXd5mpBDojXgiNNsn9i25563J4g8amLX58IPy7OkL7qug4
+XBEpKhftGyixYPCKEPADF2yM3g9obuck3oK5/fadwDh76RQ0mDvOX2fIvhEvy6cc
+1v6CaOzGHTtzyTfhA+2+a9boJp+PkqelzJzGUWqRYxsUsos6JJAOLBtQRBLSXQ==
+-----END CERTIFICATE-----
