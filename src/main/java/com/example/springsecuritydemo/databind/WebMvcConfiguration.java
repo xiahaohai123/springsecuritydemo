@@ -1,5 +1,7 @@
 package com.example.springsecuritydemo.databind;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -14,6 +16,9 @@ import java.util.List;
 
 @Configuration
 public class WebMvcConfiguration implements ApplicationContextAware {
+
+    /** 日志 */
+    private final Log log = LogFactory.getLog(this.getClass());
 
     private RequestMappingHandlerAdapter adapter;
 
@@ -33,7 +38,12 @@ public class WebMvcConfiguration implements ApplicationContextAware {
     protected void injectSelfMethodArgumentResolver() {
         List<HandlerMethodArgumentResolver> argumentResolverList = new ArrayList<>();
         argumentResolverList.add(new AliasModelAttributeMethodProcessor(applicationContext));
-        argumentResolverList.addAll(adapter.getArgumentResolvers());
+        List<HandlerMethodArgumentResolver> argumentResolvers = adapter.getArgumentResolvers();
+        if (argumentResolvers != null) {
+            argumentResolverList.addAll(argumentResolvers);
+        } else {
+            log.warn("Got null resolver from RequestMappingHandlerAdapter.");
+        }
         adapter.setArgumentResolvers(argumentResolverList);
     }
 }

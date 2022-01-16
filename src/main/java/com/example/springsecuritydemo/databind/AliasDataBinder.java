@@ -1,12 +1,18 @@
 package com.example.springsecuritydemo.databind;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.MutablePropertyValues;
+import org.springframework.beans.PropertyValue;
 import org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder;
 
 import javax.servlet.ServletRequest;
 import java.lang.reflect.Field;
 
 public class AliasDataBinder extends ExtendedServletRequestDataBinder {
+
+    /** 日志 */
+    private final Log log = LogFactory.getLog(this.getClass());
 
     public AliasDataBinder(Object target, String objectName) {
         super(target, objectName);
@@ -28,7 +34,12 @@ public class AliasDataBinder extends ExtendedServletRequestDataBinder {
             }
             for (String alias : annotation.alias()) {
                 if (mpvs.contains(alias)) {
-                    mpvs.add(declaredField.getName(), mpvs.getPropertyValue(alias).getValue());
+                    PropertyValue propertyValue = mpvs.getPropertyValue(alias);
+                    if (propertyValue == null) {
+                        log.error("Got null from mpvs. It can't happen. Shut the fuck up, my IDE.");
+                    } else {
+                        mpvs.add(declaredField.getName(), propertyValue.getValue());
+                    }
                     break;
                 }
             }
